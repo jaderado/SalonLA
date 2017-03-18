@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <link rel="stylesheet" href="../style.css">
+     <script type="text/javascript" src="../javascript.js"></script>
+    </head>
+
+
+
+    <body>
+
+         <div class="wrapper">
+             <div class="header">
+                    <h1 class="logo">Salon LA</h1>
+                </div>
+
+    <ul class="main-menu" id="myTopnav">
+        <div class="wrapper2">
+        <li class="mobile"> <a href="../Contact/index.html">Contact</a>
+        </li>
+        <li class="mobile"> <a href="../AboutSalonLA/index.html">About </a>
+        </li>
+        <li class="mobile"> <a href="../GalleryLA/index.html">Gallery</a>
+        </li>
+        <li class="mobile"> <a href="../BookAppt/index.html">Book Appointment</a>
+        </li>
+        <li class="mobile"> <a href="../">Home</a>
+        </li>
+        </div>
+        <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+    </ul>
+
+        </div>
+    </body>
+
+<br>
+    <br>
+
+
+
+
+
+   <iframe width="500" height="400" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/view?zoom=20&center=35.4201,-80.5896&key=AIzaSyDGBLwHyM6nWb0cnXPBqadYejoU9IFm92E" allowfullscreen></iframe>
+
+<center>
+    <p class="contact_statement">For more information, please call the number below or email with questions or concerns:</p>
+    <p class="address">
+        <b>Salon LA</b><br>
+        342 Church St N<br>
+        Concord, NC 28025
+
+    </p>
+    <p class="phone">
+   Phone: (555)-555-5555
+
+    </p>
+    <p class="email">
+
+     lauren.abrown@yahoo.com
+    </p>
+    </center>
+<script>
+    var map = document.getElementById('map');
+    var dbRef = firebase.database().ref().child('text');
+    dbRef.on('value', snap => map.innerText = snap.val());
+    </script>
+
+    <div class="footer" content="width=device-width">
+    @___LAURENASHLEY___(INSTAGRAM)
+    <a href="https://www.facebook.com/iSLAduh/"></a>
+     <a href="https://www.instagram.com/iSLAduh/"></a>
+     <a href="https://www.twitter.com/iSLAduh/"></a>
+    </div>
+
+
+</html>

@@ -1,0 +1,326 @@
+html,body{
+
+
+    margin:0;
+    padding:0;
+    overflow: scroll;
+}
+ul.main-menu{
+
+        list-style-type:none;
+        margin-left:-10;
+        padding:30;
+        overflow:hidden;
+        background-color: #333333;
+        font-size: 12px;
+        float:right;
+        color:white;
+
+    }
+    ul.main-menu li{
+
+        float:right;
+    }
+    .wrapper{
+        overflow: hidden;
+        background-color:#333333;
+
+    }
+.wrapper2 {
+    height:inherit;
+    padding:inherit;
+    margin:0;
+}
+
+#map{
+
+background-color: gray;
+
+
+}
+iframe{
+
+    float: right;
+    overflow: hidden;
+    margin-right: 50px;
+}
+.logo{
+    display:inline-block;
+    margin-left:20px;
+    margin-top:28px;
+}
+.contact_statement{
+
+    margin-top: 80px;
+}
+
+.address{
+    display: inline-block;
+   margin-top: 60px;
+    font-size: 18px
+}
+
+
+
+.header{
+
+
+
+     width:180px;
+    color:white;
+    background-color:#333333;
+    overflow: hidden;
+    float: left;
+
+    }
+
+
+    a{
+
+        color:white;
+
+    }
+
+    ul.main-menu li{
+        margin-left:-10px;
+        float:right;
+    }
+    ul.main-menu li a{
+        display: inline-block;
+
+        text-align:right;
+        padding: 38px;
+        text-decoration:none;
+
+    }
+ul.main-menu li.icon{
+display: none;
+}
+@media screen and (max-width:680px) {
+  ul.main-menu li {display: none;}
+  ul.main-menu li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.main-menu.responsive {
+      padding:0px;
+     width: 150px;
+
+      float:left;
+   overflow: hidden;
+    }
+    .header{
+        position: absolute;
+        left:165px;
+        top:0;
+    }
+  ul.main-menu.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.main-menu.responsive li.mobile {
+
+    float:none;
+    overflow:auto;
+    padding:0;
+    margin:0;
+    display: inline;
+
+  }
+    .slogan{
+        position:absolute;
+
+        color:black;
+        border-color: white;
+
+    }
+  ul.main-menu.responsive li a {
+     float:left;
+      overflow:auto;
+      display: block;
+    text-align: left;
+      padding:30px
+  }
+}
+.footer, .push{
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    background-color:#333333;
+    overflow: hidden;
+
+    height:50px;
+}
+#myImg{
+    margin-left:30px;
+    width:200px;
+    display:inline-block;
+   float:left;
+
+}
+
+.scrollTo{
+
+
+    color:black;
+    text-align: center;
+}
+#myImg2{
+
+     margin-left: 0px;
+    width:200px;
+    display:inline-block;
+   float:left;
+
+}
+#fullname,#number,#userEmail,#message{
+    width:190px;
+    float:right;
+    overflow: none;
+}
+#date, #time{
+
+    float:right;
+    overflow: none;
+
+}
+.can1{
+width:1100px;
+display: inline-block;
+margin-left:50px;
+}
+#submit{
+
+
+    float:right;
+    overflow: none;
+}
+.bApptInstructions
+{
+    width:450px;
+    float: left;
+  overflow: hidden;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 23px
+}
+.bookAppt{
+    width: 300px;
+    display: block;
+    margin-right:280px;
+    margin-top: 2px;
+    font-size: 18px;
+    height:400px;
+    float:right;
+    overflow: hidden;
+}
+#myImg,#myImg2,#myImg3,#myImg4,#myImg5{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+#myImg2:hover {
+    opacity: 0.7;
+}
+#myImg3:hover {
+    opacity: 0.7;
+}
+#myImg4:hover {
+    opacity: 0.7;
+}
+#myImg5:hover {
+    opacity: 0.7;
+}
+
+
+.w3-container{
+
+    width:200px;
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
